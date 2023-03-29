@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+
+  db:
+    image: 'postgres'
+    container_name: db
+    environment:
+      - POSTGRES_USER=compose-postgres
+      - POSTGRES_PASSWORD=compose-postgres
+    ports:
+      - "5432:5432"
