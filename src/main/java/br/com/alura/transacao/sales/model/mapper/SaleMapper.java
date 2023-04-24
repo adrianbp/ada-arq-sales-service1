@@ -1,9 +1,8 @@
 package br.com.alura.transacao.sales.model.mapper;
 
 import br.com.alura.transacao.sales.model.dto.SaleDTO;
-import br.com.alura.transacao.sales.model.entity.Sale;
+import br.com.alura.transacao.sales.model.entity.Banca;
 import org.mapstruct.Mapper;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -11,9 +10,9 @@ import java.util.List;
 public interface SaleMapper {
 
 
-    List<SaleDTO> parseListDTO(List<Sale> sales);
-    List<Sale> parseListEntity(List<SaleDTO> saleDTOList);
-    SaleDTO parseDTO(Sale sale);
-    Sale parseEntity(SaleDTO saleDTO);
+    List<SaleDTO> parseListDTO(List<Banca> sales);
+    List<Banca> parseListEntity(List<SaleDTO> saleDTOList);
+    SaleDTO parseDTO(Banca banca);
+    Banca parseEntity(SaleDTO saleDTO);
 
 }
